@@ -1,2 +1,6 @@
 ---
 # defaults file for preparing_hosts
+tz_name: Europe/Moscow
+home_dir: /home/miroshnichenko_an
+k9s_version: v0.32.5
+
