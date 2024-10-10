@@ -1,13 +1,13 @@
 ---
 # tasks file for preparing_hosts
 - name: Set timezone to {{ tz_name }}
-      community.general.timezone:
-        name: "{{ tz_name }}"
+  community.general.timezone:
+    name: "{{ tz_name }}"
 
 - name: Run  apt update cache
-      ansible.builtin.apt:
-        update_cache: yes
-        cache_valid_time: 3600
+  ansible.builtin.apt:
+    update_cache: yes
+    cache_valid_time: 3600
 
 - name: Install Node requirements
   ansible.builtin.apt:
